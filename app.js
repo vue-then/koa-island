@@ -8,6 +8,8 @@ const catchError = require("./middlewares/exception");
 const static = require("koa-static");
 
 require("./app/models/classic");
+require("./app/models/user");
+
 const app = new Koa();
 app.use(catchError);
 app.use(parser());

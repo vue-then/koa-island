@@ -13,6 +13,7 @@ router.post('/v1/:id/classic', async(ctx, next) => {
 
     const v = await new PositiveIntegerValidator().validate(ctx);
     ctx.body = { key: "success" };
+    
 
 })
 

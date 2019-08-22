@@ -3,13 +3,13 @@ const {
     Rule
 } = require('../../core/lin-validator-v2')
 
-// const {
-//     User
-// } = require('../models/user')
-// const {
-//     LoginType,
-//     ArtType
-// } = require('../lib/enum')
+const {
+    User
+} = require('../models/user')
+const {
+    LoginType,
+    ArtType
+} = require('../lib/enum')
 
 class PositiveIntegerValidator extends LinValidator {
     constructor() {

@@ -8,7 +8,8 @@ module.exports = {
 		port: 33061,
 		user: "root",
 		password: "root",
-		logging: process.env.NODE_ENV !== "production" ? console.log : null
+        // logging: process.env.NODE_ENV !== "production" ? console.log : null
+		logging: true
 	},
 	security: {
 		secretKey: "abcdefg",
