@@ -1,16 +1,18 @@
 const Router = require("koa-router");
 const router = new Router();
 
-router.post('/v1/:id/classic', (ctx, next) => {
+const { PositiveIntegerValidator} = require('../../validators/validator')
+
+router.post('/v1/:id/classic', async(ctx, next) => {
 
     const path = ctx.params
     const query = ctx.request.query
     const headers = ctx.request.header
     const body = ctx.request.body
-    console.log(path,query,headers,body,)
-    ctx.body = { key: "classic" };
+    // console.log(path,query,headers,body)
 
-    throw new Error('API Exception')
+    const v = await new PositiveIntegerValidator().validate(ctx);
+    ctx.body = { key: "success" };
 
 })
 

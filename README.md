@@ -4,6 +4,7 @@ wx-little-program koa back-end
 
 
 ### 当调试出现问题
+1,
 ```
 https://stackoverflow.com/questions/27688804/how-do-i-debug-error-spawn-enoent-on-node-js
 
@@ -30,4 +31,9 @@ child.on('error', function (err) {
 });
 
 ```
+2,
+```
+UnhandledPromiseRejectionWarning: ......
+函数方法中async和await或者是对promise的处理不正确
 
+```
