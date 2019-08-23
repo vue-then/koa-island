@@ -1,3 +1,4 @@
+// 加密之后，就算密码相同，加密之后的文本也不能相同，这样可以防止彩虹攻击
 const bcrypt = require('bcryptjs')
 
 const {

@@ -35,7 +35,7 @@ const sequelize = new Sequelize(dbName,user,password,{
 })
 
 sequelize.sync({
-    force:false
+    force:false //是否清空数据库
 })
 
 Model.prototype.toJSON= function(){
