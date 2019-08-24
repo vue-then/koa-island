@@ -18,4 +18,10 @@ post http://localhost:3001/v1/token
         "secret": "1234$56"
     }
 
+
+get http://localhost:3001/v1/classic/latest
+    type: Basic Auth
+    Username: (post http://localhost:3001/v1/token)=> token值
+    Password: 不填
+
 ```
